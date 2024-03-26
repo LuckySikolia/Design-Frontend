@@ -10,6 +10,18 @@ body {
     overflow-x: hidden;
 }
 
+:root {
+    /* define colour palette */
+    --primary-font-colour: #002938; /* dark blue */
+    --off-white-colour: #FDFDE5;
+    --primary-brown-colour: #7b3000;
+
+header {
+    background-color: var(--off-white-colour);
+}
+
+
+
 img {
     width: 150px;
     height: 150px;
