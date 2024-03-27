@@ -37,9 +37,13 @@ header {
     position: relative;
 }
 
-/* header > h1 {
-
-} */
+header > h1 {
+    font-family: var(--logo-serif-font);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--primary-font-colour);
+}
 
 .top-navbar {
     display: flex;
