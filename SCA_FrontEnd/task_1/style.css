@@ -49,7 +49,7 @@ header {
 
 header > h1 {
     font-family: var(--logo-serif-font);
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     color: var(--primary-font-colour);
@@ -97,11 +97,79 @@ nav > ul {
     display: flex;
 }
 
-
-img {
-    width: 150px;
-    height: 150px;
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-brown-colour);
 }
+
+
+.hero > img {
+    width: 600px;
+    height: 740px;
+    order: -1;
+}
+
+.hero > h1 {
+    align-self: center;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.hero > h2 {
+    align-self: center;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+.hero > p {
+    align-self: center;
+    padding: 80px;
+    padding-top: 40px;
+}
+
+.line-divider-top {
+    position: absolute;
+    background-color: var(--off-white-colour);
+    width: 55%;
+    height: 4px;
+    top: 10%;
+    right: 4%;
+}
+
+.line-divider-bottom {
+    position: absolute;
+    background-color: var(--off-white-colour);
+    width: 55%;
+    height: 4px;
+    bottom: 10%;
+    right: 4%;
+}
+
+.line-divider-right {
+    position: absolute;
+    background-color: var(--off-white-colour);
+    /* width: 55%; */
+    width: 4px;
+    /* height: 4px; */
+    height: 80%;
+    bottom: 10%;
+    right: 4%;
+}
+
+.line-divider-left {
+    position: absolute;
+    background-color: var(--off-white-colour);
+    width: 4px;
+    height: 80%;
+    bottom: 10%;
+    left: 41%;
+}
+
+
+
 
 
 /* responsive for smaller screens  */
@@ -133,4 +201,37 @@ img {
         gap: 3vh;
     }
 
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero > img {
+        display: none;
+        /* width: 100%;
+        height: 600px;
+        order: -1; */
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .hero > h1 {
+        position: absolute;
+        right: 28vw;
+        top: 20%;
+    }
+    .hero > h2 {
+        position: absolute;
+        right: 28vw;
+        top: 20%;
+    }
+    .hero > p {
+        align-self: center;
+        padding: 100px;
+    }
+     
 }
