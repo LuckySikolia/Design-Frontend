@@ -71,6 +71,13 @@ nav > ul {
     font-size: 16px;
 }
 
+.nav-link > a:hover {
+    text-decoration: underline;
+    color: var(--primary-brown-colour);
+    font-size: 20px;
+    transition: .3s ease-in-out;
+}
+
 /* hamburger menu styling */
 .hamburger-menu {
     display: none;
