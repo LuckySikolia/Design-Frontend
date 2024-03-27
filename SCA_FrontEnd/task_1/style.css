@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* prevent horizontal scroll */
@@ -39,18 +40,42 @@ header {
 
 header > h1 {
     font-family: var(--logo-serif-font);
-    font-size: 38px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     color: var(--primary-font-colour);
 }
 
-.top-navbar {
+nav > ul {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
+    
 }
+
+.nav-link > a {
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary-font-colour);
+    font-family: var(--primary-serif-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
 
 img {
     width: 150px;
     height: 150px;
+}
+
+
+/* responsive for smaller screens  */
+@media screen and (max-width:768px) {
+    header {
+        padding: 50px;
+    }
+
+
 }
