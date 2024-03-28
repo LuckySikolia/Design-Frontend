@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .material-symbols-outlined {
     color: var(--primary-font-colour);
@@ -34,6 +35,7 @@ body {
     --logo-serif-font: "Libre Baskerville", serif;
     --primary-sans-serif-font: "Work Sans", sans-serif;
     --secondary-sans-serif-font: "Merriweather Sans", sans-serif;
+    --primary-cursive-font: "Great Vibes", cursive;
 
 }
 
@@ -113,21 +115,32 @@ nav > ul {
 }
 
 .hero > h1 {
+    font-family: var(--primary-cursive-font);
     align-self: center;
     padding: 20px;
     padding-top: 80px;
+    opacity: 10%;
+    font-size: 80px;
+    color: #A06B4F;
 }
 
 .hero > h2 {
     align-self: center;
     padding: 20px;
     padding-top: 80px;
+    color: #EDFCFF;
+    /* color: var(--off-white-colour); */
+    font-size: 70px;
 }
 
 .hero > p {
     align-self: center;
-    padding: 80px;
-    padding-top: 40px;
+    padding: 100px;
+    /* padding-top: 160px; */
+    color: #EDFCFF;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .line-divider-top {
@@ -213,6 +226,19 @@ nav > ul {
         order: -1; */
     }
 
+    .line-divider-bottom{
+        display: none;
+    } 
+    .line-divider-left {
+        display: none;
+    } 
+    .line-divider-right {
+        display: none;
+    } 
+    .line-divider-top {
+        display: none;
+    }
+
 
 }
 
@@ -221,17 +247,22 @@ nav > ul {
 @media screen and (min-width: 768px) {
     .hero > h1 {
         position: absolute;
-        right: 28vw;
-        top: 20%;
+        right: 21vw;
+        top: 10%;
     }
     .hero > h2 {
         position: absolute;
-        right: 28vw;
-        top: 20%;
+        right: 22vw;
+        top: 10%;
+        opacity: 100%;
+        /* font-size: 70px; */
     }
     .hero > p {
         align-self: center;
-        padding: 100px;
+        padding-top: 185px;
+        padding-bottom: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
      
 }
