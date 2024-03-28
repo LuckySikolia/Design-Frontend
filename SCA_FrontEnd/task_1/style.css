@@ -105,6 +105,8 @@ nav > ul {
     display: flex;
     flex-direction: row;
     background-color: var(--primary-brown-colour);
+    margin: 0;
+    width: fit-content;
 }
 
 
@@ -220,10 +222,31 @@ nav > ul {
     }
 
     .hero > img {
-        display: none;
-        /* width: 100%;
-        height: 600px;
-        order: -1; */
+        width: 70%;
+        height: 70%;
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+
+    .hero > h1 {
+        position: absolute;
+        right: 21vw;
+        top: 31%;
+    }
+    .hero > h2 {
+        /* position: absolute; */
+        right: 22vw;
+        top: 20%;
+        opacity: 100%;
+        /* font-size: 70px; */
+    }
+
+    .hero > p {
+ 
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
     }
 
     .line-divider-bottom{
@@ -242,27 +265,89 @@ nav > ul {
 
 }
 
-
-
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    /* Styles for screens between 768px and 992px wide */
     .hero > h1 {
         position: absolute;
-        right: 21vw;
-        top: 10%;
+        right: 22vw;
+        top: 8%;
     }
     .hero > h2 {
         position: absolute;
         right: 22vw;
-        top: 10%;
+        top: 8%;
         opacity: 100%;
         /* font-size: 70px; */
     }
     .hero > p {
         align-self: center;
-        padding-top: 185px;
+        padding-top: 170px;
         padding-bottom: 50px;
         padding-left: 150px;
         padding-right: 150px;
+    }
+
+    .line-divider-top {
+        position: absolute;
+        background-color: var(--off-white-colour);
+        width: 49%;
+        height: 5px;
+        top: 5%;
+        right: 4%;
+    }
+    
+    .line-divider-bottom {
+        position: absolute;
+        background-color: var(--off-white-colour);
+        width: 49%;
+        height: 5px;
+        bottom: 4%;
+        right: 4%;
+    }
+    
+    .line-divider-right {
+        position: absolute;
+        background-color: var(--off-white-colour);
+        /* width: 55%; */
+        width: 5px;
+        /* height: 4px; */
+        height: 91%;
+        bottom: 4%;
+        right: 4%;
+    }
+    
+    .line-divider-left {
+        position: absolute;
+        background-color: var(--off-white-colour);
+        width: 5px;
+        height: 91%;
+        bottom: 4%;
+        left: 47%;
+    }
+    
+
+  }
+
+
+@media screen and (min-width: 800px) {
+    .hero > h1 {
+        position: absolute;
+        right: 20vw;
+        top: 6%;
+    }
+    .hero > h2 {
+        position: absolute;
+        right: 21vw;
+        top: 6%;
+        opacity: 100%;
+        /* font-size: 70px; */
+    }
+    .hero > p {
+        align-self: center;
+        padding-top: 170px;
+        padding-bottom: 50px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
      
 }
