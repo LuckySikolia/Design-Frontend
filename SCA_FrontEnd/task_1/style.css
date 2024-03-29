@@ -278,6 +278,18 @@ ul {
     padding: 5px;
 }
 
+/* contacts section */
+#contact {
+    position: relative;
+    background-color: var(--off-white-colour);
+    width: 100%;
+    height: auto;
+    padding: 100px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
 /* footer section */
 footer {
     background-color: var(--off-white-colour);
