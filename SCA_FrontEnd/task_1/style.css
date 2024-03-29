@@ -28,6 +28,7 @@ body {
     --primary-font-colour: #002938; /* dark blue */
     --off-white-colour: #FDFDE5;
     --primary-brown-colour: #7b3000;
+    --off-white-blue: #EDFCFF;
 
     /*define font */
     --primary-serif-font: "Playfair Display SC", serif;
@@ -124,6 +125,7 @@ nav > ul {
     opacity: 10%;
     font-size: 80px;
     color: #A06B4F;
+    position: relative;
 }
 
 .hero > h2 {
@@ -183,6 +185,23 @@ nav > ul {
     left: 41%;
 }
 
+/* skills section */
+#skills {
+    position: relative;
+    background-color: #344A53;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#skills > h2 {
+    font-family: var(--primary-serif-font);
+    font-size: 60px;
+    align-items: center;
+    text-align: center;
+    padding: 100px 0;
+    color: var(--off-white-blue);
+}
 
 
 
@@ -229,7 +248,8 @@ nav > ul {
     }
 
     .hero > h1 {
-        position: absolute;
+        /* position: absolute; */
+        position: relative;
         right: 21vw;
         top: 31%;
     }
@@ -262,6 +282,13 @@ nav > ul {
         display: none;
     }
 
+    #skills > h2 {
+        font-family: var(--primary-serif-font);
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+    }
 
 }
 
