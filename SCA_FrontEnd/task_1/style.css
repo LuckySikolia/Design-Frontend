@@ -245,10 +245,11 @@ ul {
     padding: 0;
     margin: 0;
     order: 4;
+    /* flex-wrap: nowrap; */
 }
 
 .skill-tile > img {
-    width: 60%;
+    /* width: 20%; */
     height: 350px;
     object-fit: cover;
 }
@@ -376,12 +377,12 @@ ul {
         flex-wrap: wrap;
     } */
     
-    .skill-tile > img {
-        width: 50%;
+    /* .skill-tile > img {
+        /* width: 50%; */
         /* height: 350px;
         object-fit: cover;
-        border-radius: 20px 0 0 20px; */
-    }
+        border-radius: 20px 0 0 20px; 
+    } */
 
 }
 
