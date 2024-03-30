@@ -288,8 +288,16 @@ ul {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 30px;
+    font-family: var(--primary-sans-serif-font);
+    color: var(--primary-font-colour);
 }
 
+.grid-item-left > h1 {
+    color: var(--primary-font-colour);
+    font-family: var(--primary-serif-font);
+    font-size: 40px;
+    padding: 0 20px 40px 60px;
+}
 
 /* footer section */
 footer {
@@ -355,7 +363,7 @@ footer > p {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
-  }
+}
 
 
 
