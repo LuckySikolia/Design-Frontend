@@ -339,12 +339,34 @@ ul {
     margin: 0 20px;
 }
 
-.contact-form > ul > li > input {
+.contact-form > ul > li > input, textarea {
     font-family: var(--primary-sans-serif-font);
     font-size: 12px;
     width: 110%;
+    padding: 12px 20px;
+    border-color: #344A53;
+    border-radius: 5px;
+    border-width: 1.8px;
+    /* border-style: solid; */
+    color: var(--primary-font-colour);
+    background-color: transparent; 
+    margin-top: 5px; 
 }
 
+.contact-form > ul > li > input:focus, textarea:focus {
+    /* background-color: var(--off-white-blue);   */
+    background-color: #f0f0f0;
+}
+
+.contact-form > ul > li > label {
+    opacity: 0; /* Initially hide the label */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+/* this section does not work  */
+.contact-form > ul > li > label:focus {
+    opacity: 1; /* Show label when the corresponding input is focused */
+}
 
 .grid-item-right > h6{
     font-style: normal;
@@ -353,6 +375,7 @@ ul {
     /* padding-right: 20%; */
     text-align: right;
 }
+
 
 
 
