@@ -318,24 +318,32 @@ ul {
     justify-self: center;
 }
 
+.contact-form {
+    display: grid;
+    justify-content: center;
+}
 .contact-form > ul {
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: auto;
     gap: 10px;
+    width: 100%;
 }
 
 .contact-form > ul > .button, .form-comment {
     grid-column: span 2; /* Spans two columns */
 }
 
-/* .form-email {
+.form-name, .form-email, .form-comment, .button {
+    padding: 10px 20px;
+    margin: 0 20px;
+}
 
-} */
-
-/* .contact-form label {
-    grid-column: span 1; /* Spans only one column */
-} */
+.contact-form > ul > li > input {
+    font-family: var(--primary-sans-serif-font);
+    font-size: 12px;
+    width: 110%;
+}
 
 
 .grid-item-right > h6{
@@ -576,6 +584,10 @@ footer > p {
         /* padding-right: 20%; */
         text-align: left;
     }
+
+    /* .contact-form {
+        padding: 0 30px;
+    } */
 
 }
 
