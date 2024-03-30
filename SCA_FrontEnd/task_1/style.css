@@ -368,6 +368,20 @@ ul {
     opacity: 1; /* Show label when the corresponding input is focused */
 }
 
+button {
+    background-color: #002938;
+    color: var(--off-white-colour);
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 150px;
+}
+
 .grid-item-right > h6{
     font-style: normal;
     font-weight: 400;
